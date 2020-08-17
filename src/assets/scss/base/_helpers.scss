@@ -1,0 +1,31 @@
+html{
+    overflow-x:hidden;
+    width:100%;
+}
+
+.hidden-opacity{
+    opacity:0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+}
+
+.hidden{
+    display:none;
+    visibility:hidden;
+    height:0;
+}
+
+.align-center{
+    text-align:center;
+    margin: 0 auto;
+}
+
+.align-left{
+    text-align:left;
+}
+
+.align-right{
+    text-align:right;
+}
