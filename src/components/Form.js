@@ -9,7 +9,7 @@ export default class Form extends Component {
                 <h2>Contact Us</h2>
                 <div className="grid-x grid-padding-x form-fields">
                     <div className="medium-6 cell">
-                        <input required type="text" placeholder="Entering Name.." />
+                        <input required type="text" placeholder="Name*" data-id="/>
                     </div>
                     <div className="medium-6 cell">
                         <input required type="text" placeholder="Surname*" />
