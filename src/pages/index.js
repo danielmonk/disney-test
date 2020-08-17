@@ -20,6 +20,10 @@ import disneySketch from '../assets/images/disney-sketch.png'
 import frozenImg from '../assets/images/frozen.png'
 import mickeyHand from '../assets/images/mickey-hand.png'
 import Form from '../components/Form'
+import CarsBG from '../assets/images/cars-bg.png'
+import DisneyPlusLogo from '../assets/images/disney-plus.png'
+import IncrdiblesBG from '../assets/images/incredibles-bg.png'
+
 
 
 class HomeIndex extends React.Component {
@@ -60,10 +64,18 @@ class HomeIndex extends React.Component {
             >
             </Helmet>
             <Slider 
-              backgroundImage={starWarsBg}
-              Logo = {starWarsLogo}
-              Content = "Available Now to Rent or Buy"
-              ButtonText = "Purchase"
+              backgroundImage1={starWarsBg}
+              Logo1 = {starWarsLogo}
+              Content1 = "Available Now to Rent or Buy"
+              ButtonText1 = "Purchase"
+              backgroundImage2={CarsBG}
+              Logo2 = {DisneyPlusLogo}
+              Content2 = "Available Now on Disney+"
+              ButtonText2 = "Watch Now"
+              backgroundImage3={IncrdiblesBG}
+              Logo3 = {DisneyPlusLogo}
+              Content3 = "Available Now on Disney+"
+              ButtonText3 = "Watch Now"
             />
             <TextBlock
               heading="Covid-19 Update"
