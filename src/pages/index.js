@@ -29,24 +29,29 @@ import IncrdiblesBG from '../assets/images/incredibles-bg.png'
 class HomeIndex extends React.Component {
   componentDidMount () {
 
+    // set variables for scroll
     var scrollpos = window.scrollY;
     var header = document.querySelector(".slick-slider__hero");
 
+    // adding inactive on scroll
     function add_class_on_scroll() {
         header.classList.add("slick-slider__hero--inactive");
     }
 
+    // removing class on scroll
     function remove_class_on_scroll() {
         header.classList.remove("slick-slider__hero--inactive");
     }
 
+    // scroll function
     window.addEventListener('scroll', function(){ 
-        //Here you forgot to update the value
         scrollpos = window.scrollY;
 
-        if(scrollpos > 500){
+        // if scroll past 600 add class
+        if(scrollpos > 600){
             add_class_on_scroll();
         }
+        // remove class
         else {
             remove_class_on_scroll();
         }
