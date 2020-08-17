@@ -6,6 +6,14 @@
         .slick-list, .slick-track, .slick-slide{
             background-color:_palette(accent1);
         }
+        .button{
+            &--white{
+                &:hover{
+                    color:#fff;
+                    background:#000;
+                }
+            }
+        }
     }
     &__top{
         padding:35px 0;
