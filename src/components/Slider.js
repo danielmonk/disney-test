@@ -9,7 +9,7 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      //fade: true
     };
     return (
       <div>
