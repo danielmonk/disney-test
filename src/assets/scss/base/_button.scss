@@ -12,11 +12,19 @@
     &--white{
         background:#fff;
         color:#000;
+        &:hover{
+            background-color:#000;
+            color:#fff;
+        }
     }
 
     &--black{
         background:#000;
         color:#fff;
+        &:hover{
+            background-color:_palette(accent1);
+            //color:#000;
+        }
     }
 
     &--outline{
@@ -47,6 +55,9 @@
             top:11px;
             left:11px;
         }
+        &:hover{
+            background-color:_palette(accent2);
+        }
     }
 
     &--video-title{
@@ -60,6 +71,11 @@
         @media screen and (min-width: 40em) {
             margin:0;
             display:inline-block;
+        }
+        &:hover{
+            &:after{
+                @include vendor('background-image', 'url("../images/right-arrow-white.png")');
+            }
         }
         &:after{
             content:"";
