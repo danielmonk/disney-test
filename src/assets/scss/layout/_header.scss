@@ -1,0 +1,22 @@
+header{
+    background:#000;
+    padding:15px 40px;
+    &.sticky{
+        position: fixed;
+        top: 0;
+        height: 85px;
+        z-index: 10;
+        width: 100%;
+    }
+    .logo{
+        img{
+            max-width:120px;
+        }
+    }
+    .login{
+        text-align:right;
+        button{
+            margin-bottom:0;
+        }
+    }
+}
