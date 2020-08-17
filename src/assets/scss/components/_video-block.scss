@@ -1,6 +1,10 @@
 .video-block{
     h3{
+        margin-top:40px;
         font-weight:400;
+        @media screen and (min-width: 40em) {
+           margin-top:0; 
+        }
     }
     p{
         margin:30px 0;
@@ -10,7 +14,10 @@
         text-align:center;
         display:flex;
         align-items:center;
-        min-height:750px;
+        min-height:300px;
+        @media screen and (min-width: 40em) {
+            min-height:750px;
+        }
         &.hidden{
             min-height:0px;
         }
