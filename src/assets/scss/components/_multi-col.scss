@@ -1,0 +1,13 @@
+.multi-col{
+    margin:50px 0;
+    padding:0 15px;
+    @media screen and (min-width: 40em) {
+        padding:0 50px; 
+    }
+    .image-col{
+        @include xy-cell(25%, true, 7.5, margin, right left, null, false);
+        img{
+            //margin:0 5px;
+        }
+    }
+}
