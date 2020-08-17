@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-starter-forty-v2",
+  "description": "Gatsby Starter - Forty V2",
+  "version": "1.0.0",
+  "author": "Hunter Chang",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@vimeo/player": "^2.12.2",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "foundation-sites": "^6.6.3",
+    "gatsby": "^2.19.5",
+    "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sharp": "^2.6.27",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-sharp": "^2.5.13",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.2.2",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.27.8",
+    "react-sticky": "^6.0.3",
+    "simple-react-lightbox": "^3.2.3-3",
+    "slick-carousel": "^1.8.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "node server/index.js",
+    "start-app": "npm run build && npm run start-server"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.3",
+    "prettier": "^1.19.1",
+    "react-foundation": "^0.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
