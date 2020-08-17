@@ -58,7 +58,7 @@ export default class VideoBlock extends Component {
                 
             </div>
           </Cell>
-          <Cell className="large-offset-1 small-offset-1" small={10} large={4}>
+          <Cell className="large-offset-1 small-offset-1 video-block__content" small={10} large={4}>
               <h3>{this.props.heading}</h3>
               <p>{this.props.content}</p>
               <button className="button button--round button--black button--video-title" type="button">{this.props.ButtonText}</button>
