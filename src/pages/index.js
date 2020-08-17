@@ -1,0 +1,126 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import Slider from '../components/Slider'
+import TextBlock from '../components/TextBlock'
+import starWarsLogo from '../assets/images/star-wars-logo.png'
+import starWarsBg from '../assets/images/star-wars-bg.png'
+import VideoTitle from '../components/VideoTitle'
+import BATBCover from '../assets/images/beauty-and-the-beast.png'
+import AIWCover from '../assets/images/alice-in-wonderland.png'
+import TLKCover from '../assets/images/lion-king.png'
+import TI2Cover from '../assets/images/incredibles-2.png'
+import UPCover from '../assets/images/up.png'
+import VideoBlock from '../components/VideoBlock'
+import starWarsVideoBG from '../assets/images/star-wars-trailer.png'
+import MultiCol from '../components/MultiCol'
+import WDWImg from '../assets/images/walt-disney-world.png'
+import disneySketch from '../assets/images/disney-sketch.png'
+import frozenImg from '../assets/images/frozen.png'
+import mickeyHand from '../assets/images/mickey-hand.png'
+import Form from '../components/Form'
+
+
+class HomeIndex extends React.Component {
+  componentDidMount () {
+
+    var scrollpos = window.scrollY;
+    var header = document.querySelector(".slick-slider__hero");
+
+    function add_class_on_scroll() {
+        header.classList.add("slick-slider__hero--inactive");
+    }
+
+    function remove_class_on_scroll() {
+        header.classList.remove("slick-slider__hero--inactive");
+    }
+
+    window.addEventListener('scroll', function(){ 
+        //Here you forgot to update the value
+        scrollpos = window.scrollY;
+
+        if(scrollpos > 500){
+            add_class_on_scroll();
+        }
+        else {
+            remove_class_on_scroll();
+        }
+    });
+  }
+    render() {
+
+        return (
+          <Layout>
+            <Helmet
+                title="Disney"
+                meta={[
+                    { name: 'description', content: 'Disney' }
+                ]}
+            >
+            </Helmet>
+            <Slider 
+              backgroundImage={starWarsBg}
+              Logo = {starWarsLogo}
+              Content = "Available Now to Rent or Buy"
+              ButtonText = "Purchase"
+            />
+            <TextBlock
+              heading="Covid-19 Update"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            />
+            <VideoTitle
+              Colour="black"
+              Title="New releases this month"
+              ButtonText="See All"
+              BATBCover={BATBCover}
+              BATBTitle="Beauty and the Beast"
+              AIWCover={AIWCover}
+              AIWTitle="Alice in Wonderland"
+              TLKCover={TLKCover}
+              TLKTitle="The Lion King"
+              TI2Cover={TI2Cover}
+              TI2Title="The Incredibles 2"
+              UPCover={UPCover}
+              UPTitle="Up"
+            />
+            <VideoTitle
+              Colour="orange"
+              Title="New releases this month"
+              ButtonText="See All"
+              BATBCover={BATBCover}
+              BATBTitle="Beauty and the Beast"
+              AIWCover={AIWCover}
+              AIWTitle="Alice in Wonderland"
+              TLKCover={TLKCover}
+              TLKTitle="The Lion King"
+              TI2Cover={TI2Cover}
+              TI2Title="The Incredibles 2"
+              UPCover={UPCover}
+              UPTitle="Up"
+            />
+            <VideoBlock
+              heading="New Star Wars Trailer"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              ButtonText="Read more"
+              backgroundImage={starWarsVideoBG}
+            />
+            <MultiCol
+              image1={WDWImg}
+              image1alt="Walt Disney World Image"
+              image2={disneySketch}
+              image2alt="Disney Sketch Image"
+              image3={frozenImg}
+              image3alt="Disney Frozen Image'"
+              image4={mickeyHand}
+              image4alt="Disney Mickey Hand Image"
+            />
+            <Form 
+              ButtonText = "Submit"
+            />
+          </Layout>
+        )
+    }
+}
+
+export default HomeIndex
