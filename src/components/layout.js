@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../assets/scss/main.scss'
-import Header from './Header'
+import Header from './header'
 import Menu from './Menu'
-import Footer from './Footer'
+import Footer from './footer'
 
 class Layout extends React.Component {
     constructor(props) {
