@@ -16,6 +16,7 @@ export default class SimpleSlider extends Component {
       //centerMode: true,
       //centerPadding: 100,
       autoplay: true,
+      touchThreshold:100,
     };
     return (
       <div>
