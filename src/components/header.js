@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import logo from '../assets/images/disney-logo.png'
 import { Grid, Cell, Button } from 'react-foundation';
-import Menu from '../components/menu'
+import Menu from '../components/Menu'
 
 const Header = (props) => (
   <div data-sticky-container>
