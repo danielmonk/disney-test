@@ -9,7 +9,8 @@ export default class TextBlock extends Component {
         <Grid className="display align-middle align-center">
           <Cell small={12} large={10}>
               <h3>{this.props.heading}</h3>
-              <p>{this.props.content}</p>
+              <p>{this.props.content1}</p>
+              <p>{this.props.content2}</p>
           </Cell>
         </Grid>
         </Grid>
