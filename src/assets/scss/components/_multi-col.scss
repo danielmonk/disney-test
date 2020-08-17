@@ -5,7 +5,10 @@
         padding:0 50px; 
     }
     .image-col{
-        @include xy-cell(25%, true, 7.5, margin, right left, null, false);
+        @include xy-cell(50%, true, 7.5, margin, right left, null, false);
+        @media screen and (min-width: 40em) {
+            @include xy-cell(25%, true, 7.5, margin, right left, null, false);
+        }
         img{
             //margin:0 5px;
         }
