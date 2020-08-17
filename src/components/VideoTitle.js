@@ -33,34 +33,24 @@ export default class SimpleSlider extends Component {
             <Grid className="grid-container align-middle">
                 <Slider {...settings} className="slider slick-slider--video-title">
                 <div>
-                    <Link to="#">
                         <img className="cover "src={this.props.BATBCover} alt="Beauty and the Beast Cover" />
-                        <p>{this.props.BATBTitle} </p>
-                    </Link>
+                        <Link to="#"><p>{this.props.BATBTitle} </p></Link>
                 </div>
                 <div>
-                    <Link to="#">
                         <img className="cover "src={this.props.AIWCover} alt="Alice in Wonderland Cover" />
-                        <p>{this.props.AIWTitle} </p>
-                    </Link>
+                        <Link to="#"><p>{this.props.AIWTitle} </p></Link>
                 </div>
                 <div>
-                    <Link to="#">
                         <img className="cover "src={this.props.TLKCover} alt="The Lion King Cover" />
-                        <p>{this.props.TLKTitle} </p>
-                    </Link>
+                        <Link to="#"><p>{this.props.TLKTitle} </p></Link>
                 </div>
                 <div>
-                    <Link to="#">
                         <img className="cover "src={this.props.TI2Cover} alt="The Incredibles 2 Cover" />
-                        <p>{this.props.TI2Title} </p>
-                    </Link>
+                        <Link to="#"><p>{this.props.TI2Title} </p></Link>
                 </div>
                 <div>
-                    <Link to="#">
                         <img className="cover "src={this.props.UPCover} alt="UP Cover" />
-                        <p>{this.props.UPTitle} </p>
-                    </Link>
+                        <Link to="#"><p>{this.props.UPTitle} </p></Link>
                 </div>
                 </Slider>
             </Grid>
